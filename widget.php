@@ -30,18 +30,17 @@
             default : $thumbnail = $defaultThumbnail;
         };
 
-	    echo '
-                <div>
-                    <a href="'.$link.'">
-                        <img src="' . $thumbnail. '" alt=""/>
-                    </a>
-                </div>
-                <div>
-                    <div>
-                        <h3><a href="'.$link.'"></a></h3>
-                    </div>
-                </div>
+	echo '
+            <div>
+                <a href="'.$link.'">
+                    <img src="' . $thumbnail. '" alt=""/>
+                </a>
+            </div>
+            <div>
+                    <h3><a href="'.$link.'"></a></h3>
+            </div>
         ';
+
     endforeach;
     return ob_get_clean();
 ?>
